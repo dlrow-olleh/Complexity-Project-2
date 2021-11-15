@@ -5,6 +5,8 @@
 
 2) An abstract that identifies the topics you intend to investigate and the tools you plan to use.
 ## Annotated Bibliograpy
+https://www.taylorfrancis.com/chapters/edit/10.4324/9781351034944-9/contagious-agents-sebastian-vehlken
+https://ieeexplore.ieee.org/abstract/document/6113095
 3) An annotated bibliography of one or more papers that relate to your topic and/or tools.  Explain what the papers are about, what experiments they report, and what their primary conclusions are.
 ## Experiment and Results
 4) Present an experiment from these papers that you plan to replicate and any extensions or variations of those experiments you are considering.
