@@ -6,7 +6,14 @@ Sugarscape is a model that, in a simple way, represents reward-seeking and resou
 2) An abstract that identifies the topics you intend to investigate and the tools you plan to use.
 ## Annotated Bibliograpy
 https://www.taylorfrancis.com/chapters/edit/10.4324/9781351034944-9/contagious-agents-sebastian-vehlken
+
+An Agent-Based Model of Epidemic Spread Using Human Mobility and Social Network Information
 https://ieeexplore.ieee.org/abstract/document/6113095
+
+Frias-Martinez, Enrique; Williamson, Graham; Frias-Martinez, Vanessa, IEEE (October 2011).
+
+This paper uses an agent based approach to evaluate the effects that govornment restrictions on the 2009 H1N1 outbreak in Mexico. To characterize agent's behavior, patterns of interactions and individual movement are collected from call records. This allows for accurate modeling of virus spreading, and allows an understanding of the effects of govornment restrictions that were put into place. The simulation produced shows that govornment mandates reduced by 10% the peak number of cases at a time, and postponed the peak - flattening the curve.
+
 3) An annotated bibliography of one or more papers that relate to your topic and/or tools.  Explain what the papers are about, what experiments they report, and what their primary conclusions are.
 ## Experiment and Results
 4) Present an experiment from these papers that you plan to replicate and any extensions or variations of those experiments you are considering.
