@@ -2,7 +2,7 @@
 ###### by Ally Bell and Mahima Beltur
 
 ## Abstract
-
+Sugarscape is a model that, in a simple way, represents reward-seeking and resource accumulating behaviours in societies. In this project we will explore how the behaviours of our agents are modified with the introduction of an epidemic disease begins to affect the population. The disease will spread to closeby agents and greatly increase the probability of the agent dying, unless they receive significant "aid" by surrounding agents. The amount of aid is measured by the number of neighboring agents. We plan on modelling the contagious disease in a similar manner to the forest fire model. We will explore how different rates of contagion will influence the agents of different ranges of vision when they are programed to move away from disease, but closer to a bigger source of sugar. It will be interesting to note which desire wins out more: life or wealth?
 2) An abstract that identifies the topics you intend to investigate and the tools you plan to use.
 ## Annotated Bibliograpy
 https://www.taylorfrancis.com/chapters/edit/10.4324/9781351034944-9/contagious-agents-sebastian-vehlken
