@@ -7,12 +7,20 @@ Sugarscape is a model that, in a simple way, represents reward-seeking and resou
 ## Annotated Bibliograpy
 https://www.taylorfrancis.com/chapters/edit/10.4324/9781351034944-9/contagious-agents-sebastian-vehlken
 
-An Agent-Based Model of Epidemic Spread Using Human Mobility and Social Network Information
+#### An Agent-Based Model of Epidemic Spread Using Human Mobility and Social Network Information
 https://ieeexplore.ieee.org/abstract/document/6113095
 
 Frias-Martinez, Enrique; Williamson, Graham; Frias-Martinez, Vanessa, IEEE (October 2011).
 
-This paper uses an agent based approach to evaluate the effects that govornment restrictions on the 2009 H1N1 outbreak in Mexico. To characterize agent's behavior, patterns of interactions and individual movement are collected from call records. This allows for accurate modeling of virus spreading, and allows an understanding of the effects of govornment restrictions that were put into place. The simulation produced shows that govornment mandates reduced by 10% the peak number of cases at a time, and postponed the peak - flattening the curve.
+This paper uses an agent based approach to evaluate the effects that govornment restrictions on the 2009 H1N1 outbreak in Mexico. To characterize agent's behavior, patterns of interactions and individual movement are collected from call records. This allows for accurate modeling of virus spreading, and allows an understanding of the effects of govornment restricti, ons that were put into place. The simulation produced shows that govornment mandates reduced by 10% the peak number of cases at a time, and postponed the peak - flattening the curve.
+
+#### Rebellion on Sugarscape: Case Studies for Greed and Grievance Theory of Civil Conflicts using Agent-Based Models
+
+https://arxiv.org/ftp/arxiv/papers/1908/1908.06883.pdf
+
+Pan, Rong, Arizona State University (August 1, 2019).
+
+
 
 3) An annotated bibliography of one or more papers that relate to your topic and/or tools.  Explain what the papers are about, what experiments they report, and what their primary conclusions are.
 ## Experiment and Results
@@ -20,10 +28,20 @@ This paper uses an agent based approach to evaluate the effects that govornment 
 5) Sketch what the results from these experiments might look like, possibly using a cartoon of a graphical result.
 6) Explain how you will interpret the results. How will you know if results from your replicated experiment are consistent with the original. Is there a particular measurement or figure you can compare?
 ## Areas of Concern
+
+Notes from class:
+- Need to be cognizant of how we're bringing two types of models together which answer very different questions: sugarscape is about finding resources where an epidemic disease model is about transmission
+- violet heart math videos, early on in covid how things should be opened or not
+- model could spontaniously show two different strategies
+- vision and metabolism in sugar scape, so as the system evoled we got more vision less metabolism. This answer feels somewhat obvious, whereas there is not an obvious anwer with the model we are doing
+- we could have a parameter that was continuous and resprestned some strategry - disease, inclination to wander, 
+- it would be interesting to end up with a bimodal distribution
+
 7) Identify causes for concern.  Review the criteria for what makes a good project and identify any areas where your project might be problematic.
 ## Next Steps
 ### Mahima
 ### Ally
+I'm going to work on writing a first implementation of this model and get it to Mahima 11/21.
 8) Outline next steps.  For each team member, what do you plan to work on immediately?  For the team, what do you think you can get done in the first week?  Consider using GitHub Projects to make a kanban board to track tasks.
 
 
