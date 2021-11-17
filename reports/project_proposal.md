@@ -3,10 +3,10 @@
 
 ## Abstract
 Sugarscape is a model that, in a simple way, represents reward-seeking and resource accumulating behaviours in societies. In this project we will explore how the behaviours of our agents are modified with the introduction of an epidemic disease begins to affect the population. The disease will spread to closeby agents and greatly increase the probability of the agent dying, unless they receive significant "aid" by surrounding agents. The amount of aid is measured by the number of neighboring agents. We plan on modelling the contagious disease in a similar manner to the forest fire model. We will explore how different rates of contagion will influence the agents of different ranges of vision when they are programed to move away from disease, but closer to a bigger source of sugar. It will be interesting to note which desire wins out more: life or wealth?
-2) An abstract that identifies the topics you intend to investigate and the tools you plan to use.
-## Annotated Bibliograpy
-https://www.taylorfrancis.com/chapters/edit/10.4324/9781351034944-9/contagious-agents-sebastian-vehlken
 
+## Annotated Bibliograpy
+<!-- https://www.taylorfrancis.com/chapters/edit/10.4324/9781351034944-9/contagious-agents-sebastian-vehlken
+ -->
 #### An Agent-Based Model of Epidemic Spread Using Human Mobility and Social Network Information
 https://ieeexplore.ieee.org/abstract/document/6113095
 
@@ -14,15 +14,12 @@ Frias-Martinez, Enrique; Williamson, Graham; Frias-Martinez, Vanessa, IEEE (Octo
 
 This paper uses an agent based approach to evaluate the effects that govornment restrictions on the 2009 H1N1 outbreak in Mexico. To characterize agent's behavior, patterns of interactions and individual movement are collected from call records. This allows for accurate modeling of virus spreading, and allows an understanding of the effects of govornment restricti, ons that were put into place. The simulation produced shows that govornment mandates reduced by 10% the peak number of cases at a time, and postponed the peak - flattening the curve.
 
-#### Rebellion on Sugarscape: Case Studies for Greed and Grievance Theory of Civil Conflicts using Agent-Based Models
+<!-- #### Rebellion on Sugarscape: Case Studies for Greed and Grievance Theory of Civil Conflicts using Agent-Based Models
 
 https://arxiv.org/ftp/arxiv/papers/1908/1908.06883.pdf
 
-Pan, Rong, Arizona State University (August 1, 2019).
+Pan, Rong, Arizona State University (August 1, 2019). -->
 
-
-
-3) An annotated bibliography of one or more papers that relate to your topic and/or tools.  Explain what the papers are about, what experiments they report, and what their primary conclusions are.
 ## Experiment and Results
 
 The experiment we will replicate involved adding a behaviour to the agents in sugarscape that acts as a- counter incentive to moving towards areas of highest sugar density. This counter-incentive will be an highly transmissible epidemic dease that the agents will be programmed to- or learn to- avoid. We expect our preliminary experimental results to look something like this:
