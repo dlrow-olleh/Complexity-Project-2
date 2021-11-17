@@ -24,6 +24,12 @@ Pan, Rong, Arizona State University (August 1, 2019).
 
 3) An annotated bibliography of one or more papers that relate to your topic and/or tools.  Explain what the papers are about, what experiments they report, and what their primary conclusions are.
 ## Experiment and Results
+
+![image](https://user-images.githubusercontent.com/42980963/142095021-285270c0-59ec-4542-87b9-8088455d1379.png)
+
+
+
+
 4) Present an experiment from these papers that you plan to replicate and any extensions or variations of those experiments you are considering.
 5) Sketch what the results from these experiments might look like, possibly using a cartoon of a graphical result.
 6) Explain how you will interpret the results. How will you know if results from your replicated experiment are consistent with the original. Is there a particular measurement or figure you can compare?
@@ -40,9 +46,10 @@ Notes from class:
 7) Identify causes for concern.  Review the criteria for what makes a good project and identify any areas where your project might be problematic.
 ## Next Steps
 ### Mahima
+I will spend some time studying the implementation of epidemic models and planning out ways that we might be able to apply these concepts to the sugarscape model. I will also brainstorm some metrics we can focus on measuring after we have a working model.
+
 ### Ally
 I'm going to work on writing a first implementation of this model and get it to Mahima 11/21.
-8) Outline next steps.  For each team member, what do you plan to work on immediately?  For the team, what do you think you can get done in the first week?  Consider using GitHub Projects to make a kanban board to track tasks.
 
 
 
