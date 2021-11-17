@@ -25,25 +25,23 @@ Pan, Rong, Arizona State University (August 1, 2019).
 3) An annotated bibliography of one or more papers that relate to your topic and/or tools.  Explain what the papers are about, what experiments they report, and what their primary conclusions are.
 ## Experiment and Results
 
+The experiment we will replicate involved adding a behaviour to the agents in sugarscape that acts as a- counter incentive to moving towards areas of highest sugar density. This counter-incentive will be an highly transmissible epidemic dease that the agents will be programmed to- or learn to- avoid. We expect our preliminary experimental results to look something like this:
+
 ![image](https://user-images.githubusercontent.com/42980963/142095021-285270c0-59ec-4542-87b9-8088455d1379.png)
 
+The image on the left represents what we expect to see time 0 of running our model, with one ill agent in different population densities. At the end of the experiment it is evident that the agents that decided to stay in the areas of high sugar densities (also with the highest population density) have more cases amongst them than agents who stayed  or decided to move to areas of lower population density. By comparing the number of agents that gravitate towards certain behaviours such as:
 
+* nomadic agents vs farming agents
+* disregarding risk of disease in order to maximize resource possession vs disregarding material collection in order to avoid disease
+It would be itneresting if we were able to find clusteres adhering to two opposite as successful survival mechanism.
 
-
-4) Present an experiment from these papers that you plan to replicate and any extensions or variations of those experiments you are considering.
-5) Sketch what the results from these experiments might look like, possibly using a cartoon of a graphical result.
-6) Explain how you will interpret the results. How will you know if results from your replicated experiment are consistent with the original. Is there a particular measurement or figure you can compare?
 ## Areas of Concern
 
-Notes from class:
-- Need to be cognizant of how we're bringing two types of models together which answer very different questions: sugarscape is about finding resources where an epidemic disease model is about transmission
-- violet heart math videos, early on in covid how things should be opened or not
-- model could spontaniously show two different strategies
-- vision and metabolism in sugar scape, so as the system evoled we got more vision less metabolism. This answer feels somewhat obvious, whereas there is not an obvious anwer with the model we are doing
-- we could have a parameter that was continuous and resprestned some strategry - disease, inclination to wander, 
-- it would be interesting to end up with a bimodal distribution
+* We need to be cognizant of how we're bringing two types of models together which answer very different questions: sugarscape is about finding resources where an epidemic disease model is about transmission
+* We need to decide on concrete metrics by which to measure the agent behaviours. As one example, we could have a parameter that was continuous and resprestned some strategry - disease, inclination to wander etc. 
+* It is possible that the model could spontaniously show two different strategies- which would be an interesting find!
+* There is not an obvious anwer with the model we are doing. In sugarscape, as the system evoled we got more vision and less metabolism. This answer feels somewhat obvious, whereas that's not the case of our model.
 
-7) Identify causes for concern.  Review the criteria for what makes a good project and identify any areas where your project might be problematic.
 ## Next Steps
 ### Mahima
 I will spend some time studying the implementation of epidemic models and planning out ways that we might be able to apply these concepts to the sugarscape model. I will also brainstorm some metrics we can focus on measuring after we have a working model.
