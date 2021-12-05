@@ -12,6 +12,7 @@ def download(url):
 download('https://github.com/AllenDowney/ThinkComplexity2/raw/master/notebooks/utils.py')
 download('https://github.com/AllenDowney/ThinkComplexity2/raw/master/notebooks/Cell2D.py')
 
+
 import agent
 
 def distances_from(n, i, j):
