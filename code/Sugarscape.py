@@ -14,6 +14,7 @@ download('https://github.com/AllenDowney/ThinkComplexity2/raw/master/notebooks/C
 
 
 import agent
+import Cell2D
 
 def distances_from(n, i, j):
     """Computes an array of distances.
