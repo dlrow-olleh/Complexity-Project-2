@@ -12,14 +12,24 @@ The results are clearly laid out in a well presented graph, showing the ants in 
 
 ##### Interpretation: Does the draft report interpret the results as an answer to the motivating question? Does the argument hold water?
 
+Not yet, but it seems like they're in a direction to be able to do this once they have results from their model and decide on a question.
 
+##### Replication: Are the results in the report consistent with the results from the original paper? If so, how did the authors demonstrate that consistency? Is it quantitative or qualitative?
 
-Replication: Are the results in the report consistent with the results from the original paper? If so, how did the authors demonstrate that consistency? Is it quantitative or qualitative?
+I'm not super clear about if the team has gotten results that match the original paper, although it seems like this is a work in progress. The graph demonstrating ant population in different places seems to be able to make this comparison quantitatively.
 
-Extension: Does the report explain an extension to the original experiment clearly? Can it answer an interesting question that the original experiment did not answer?
+##### Extension: Does the report explain an extension to the original experiment clearly? Can it answer an interesting question that the original experiment did not answer?
 
-Progress: Is the team roughly where they should be at this point, with a replication that is substantially complete and an extension that is clearly defined and either complete or nearly so?
+Right now, the team doesn't know what question they're trying to answer. Some of their ideas for this extension seem interesting, but have not yet been decided upon or modeled.
 
-Presentation: Is the report written in clear, concise, correct language? Is it consistent with the audience and goals of the report? Does it violate any of the recommendations in [my style guide (Links to an external site.)](https://sites.google.com/site/allendowney/style-guide)?
+##### Progress: Is the team roughly where they should be at this point, with a replication that is substantially complete and an extension that is clearly defined and either complete or nearly so?
 
-Mechanics: Is the report in the right directory with the right file name? Is it formatted professionally in Markdown? Does it include a meaningful title and the full names of the authors? Is the bibliography in an acceptable style? 
+The team seems to have a good idea of what they are doing, but they have not yet figured out their extension or fully recreated the original paper.
+
+##### Presentation: Is the report written in clear, concise, correct language? Is it consistent with the audience and goals of the report? Does it violate any of the recommendations in [my style guide](https://sites.google.com/site/allendowney/style-guide)?
+
+The report does a good job of using clear language, and describing the behavior they're expecting to observe. Not everything is fully clear at the moment, but that makes sense with where they are at in the modeling process. The explanations are grounded in ways that make sense and are clear to an audience coming in without an understanding of this model.
+
+##### Mechanics: Is the report in the right directory with the right file name? Is it formatted professionally in Markdown? Does it include a meaningful title and the full names of the authors? Is the bibliography in an acceptable style? 
+
+Looks good! Everything is there, perhaps the title should include something about selecting a new nesting site, as it seems like the model is about the steps before deicing emigration as well.
