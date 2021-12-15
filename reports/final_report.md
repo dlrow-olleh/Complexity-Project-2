@@ -79,10 +79,10 @@ The number of agents sick seems to spike at the beginning in all scenarios, and 
 
 One interesting behavior seen here is in the agents who were only looking for food. These agents faced much higher rates of infection, but still followed a surprisingly similar infection curve to  the agents who looked to avoid sick neighbors. Despite higher levels of infection, these agents maintained a much larger population. Coupled with the observation that nearly all agents die due to starvation across all the models, we observe that, for the purposes of this model, it is more important for each agent to maintain their resources than health. In the first model, where the only priority is food, all agents are able to access the highest density of sugar, while in the other models  the agents cluster in areas of lowwe sugar density to avoid contact with the illness and therefore suffer as a result. 
 
-Looking at the comparison of the cdf distributions, it follows from the previous discussion that populations that care more about food than the illness have, overall, a larger amount of wealth. This follows as they are more willing to to venture into areas of high foodproduction despite the 
+Looking at the comparison of the cdf distributions, it follows from the previous discussion that populations that care more about food than the illness have, overall, a larger amount of wealth. The largest mass of wealth is won by the population that cares solely for sugar collection. This follows as they are more willing to to venture into areas of high food production despite risking exposure. It is interesting to note that across all of the models, only a few members of the population control the majority of the wealth. The corelation between the range of vision of the individuals and their quantity of sugar is yet to be studied. 
 
 ## Future Steps
-
+* Find the corelation between vision and their
 
 
 
