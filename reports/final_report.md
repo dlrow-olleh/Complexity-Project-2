@@ -3,43 +3,71 @@
 ###### by Ally Bell and Mahima Beltur
 
 ## Abstract
-Sugarscape is a model that, in a simple way, represents reward-seeking and resource accumulating behaviours in societies. In this project we will explore how the behaviours of our agents are modified with the introduction of an epidemic disease begins to affect the population. The disease will spread to close by agents and greatly increase the probability of the agent dying, unless they receive significant "aid" by surrounding agents. The amount of aid is measured by the number of neighboring agents. We plan on modelling the contagious disease in a similar manner to the forest fire model. We will explore how different rates of contagion will influence the agents of different ranges of vision when they are programed to move away from disease, but closer to a bigger source of sugar. It will be interesting to note which desire wins out more: life or wealth?
+The Sugarscape model is a simplified representation of resource seeking behaviours in societies. In this project we explore how the behaviours of our agents are modified with the introduction of an epidemic disease to the population. The disease will spread to close by agents and greatly increase the probability of the agent dying, unless they receive significant "aid" by surrounding agents. The amount of aid is measured by the number of neighboring agents. We plan on modelling the contagious disease in a similar manner to the forest fire model. We will explore how different rates of contagion will influence the agents of different ranges of vision when they are programed to move away from disease, but closer to a bigger source of sugar. It will be interesting to note which desire wins out more: life or wealth?
 
 ## Background
 
-Sugarscape is an agent based model proposed in 1996 by Joshua Epstein and Robert Axtell that 
+Sugarscape is an agent based model proposed in 1996 by Joshua Epstein and Robert Axtell where agents move around a 2-D grid harvesting and storing sugar. Across this grid, sugar is produced in different amounts, which agents need to survive.
+
+Each agent starts the simulation with some amount of sugar, and some amount they need to consume for sustenance per step. They can see the amount of sugar in a radius of neighboring cells and and move towards it accordingly, although some agents can move and see further than others. These three factors give some agents advantages, leading to unequal wealth (sugar) distribution. 
+
+For each time step, agents move in a random order. They look at the cells within the radius of vision they have, choose the unoccupied cell with the most sugar (in a tie, they pick the closest cell or choose randomly), move to the selected cell, and harvest sugar. At the end of this movement, they consume the amount of sugar they need. If they do not have enough sugar stored to fulfill this, they "die" and are removed from the grid.
+
+![original model](./images/original_sugarscape.PNG )
+
+In this replication of the original model, we can see the agents, denoted by red dots, move around the grid over three time steps: zero, two, and one-hundred, going from left to right. The amount of sugar in each cell is shown based on its color, the darker orange the cell, the more sugar present. 
 
 
 
-## Annotated Bibliograpy
+## Experiment
 
-<!-- https://www.taylorfrancis.com/chapters/edit/10.4324/9781351034944-9/contagious-agents-sebastian-vehlken
- -->
+We took the original Sugarscape model, and introduced a disease. This disease spreads between agents at a variable level of contagion, and with varying fatality. Some agents begin the simulation with this illness, and put the agents in a radius around them at risk for infection. Once infected, the length to recovery is chosen randomly. At each time step, an infected agent has a 0.01% chance of dying, and finally recovers if they make it to the length of recovery alive. Once successfully recovered, agents have a level of immunity against reinfection, making them less likely to get and spread the disease again. Agents are again represented by dots, red infected and blue uninfected. 
 
-#### An Agent-Based Model of Epidemic Spread Using Human Mobility and Social Network Information
-https://ieeexplore.ieee.org/abstract/document/6113095
+Agents are biased to avoid other agents that are infected in the same way they are biased to move towards sugar, and we tried a range of weightings for these priorities. Shown in the following figures, we can see the behavior of agents over three time steps with different ratios of the behavior they prioritized.
 
-Frias-Martinez, Enrique; Williamson, Graham; Frias-Martinez, Vanessa, IEEE (October 2011).
+In our first simulation, agents only look at finding sugar, as in the original Sugarscape model. We see a very similar behavior, where agents cluster around areas of high sugar concentration.
 
-This paper uses an agent based approach to evaluate the effects that govornment restrictions on the 2009 H1N1 outbreak in Mexico. To characterize agent's behavior, patterns of interactions and individual movement are collected from call records. This allows for accurate modeling of virus spreading, and allows an understanding of the effects of govornment restricti, ons that were put into place. The simulation produced shows that govornment mandates reduced by 10% the peak number of cases at a time, and postponed the peak - flattening the curve.
+![original model](./images/fw10 visual.PNG )
 
-<!-- #### Rebellion on Sugarscape: Case Studies for Greed and Grievance Theory of Civil Conflicts using Agent-Based Models
+In the second simulation, agents only care about avoiding infected neighbors. In this 
 
-https://arxiv.org/ftp/arxiv/papers/1908/1908.06883.pdf
+![original model](./images/fw01 visual.PNG )
 
-Pan, Rong, Arizona State University (August 1, 2019). -->
+Next, agents weight these two needs evenly.
 
-## Experiment and Results
+![original model](./images/fw11 visual.PNG )
 
-The experiment we will replicate involved adding a behaviour to the agents in sugarscape that acts as a- counter incentive to moving towards areas of highest sugar density. This counter-incentive will be an highly transmissible epidemic dease that the agents will be programmed to- or learn to- avoid. We expected our preliminary experimental results to look something like this:
+In the fourth simulation, food is given a weight of 25% and avoiding infection 75%.
 
-![image](https://user-images.githubusercontent.com/42980963/142095021-285270c0-59ec-4542-87b9-8088455d1379.png)
+![original model](./images/fw13 visual.PNG )
 
-So far, we have sucessfully implemented the existence of a disease, and its ability to spread between agents based on their proximity to each other. However, this behaviour immediately obvious in visuals of our results as we have not yet been able to have the agents be represented by the correct colours. 
+Our final scenario weights finding sugar at 75% and avoiding infection at 25%.
 
-The image on the left represents what we expect to see time 0 of running our model, with one ill agent in different population densities. At the end of the experiment it is evident that the agents that decided to stay in the areas of high sugar densities (also with the highest population density) have more cases amongst them than agents who stayed  or decided to move to areas of lower population density. By comparing the number of agents that gravitate towards certain behaviours such as:
+![original model](./images/fw31 visual.PNG )
 
-* nomadic agents vs farming agents
-* disregarding risk of disease in order to maximize resource possession vs disregarding material collection in order to avoid disease
-It would be itneresting if we were able to find clusteres adhering to two opposite as successful survival mechanism.
+Comparing the results for each,
+
+![original model](./images/wealth distribution alive agents.PNG )
+
+![original model](./images/Sick agents.PNG )
+
+![original model](./images/Agents alive.PNG )
+
+The number of agents sick seems to spike at the beginning in all scenarios, and then quickly drop and level out as the time steps progress. We think this is because agents start the simulation randomly spread out across the grid, and quickly move towards an equilibrium away form each other, or at least in clusters across the space, leading to smaller outbreaks. 
+
+One interesting behavior seen here is in the agents who were only looking for food. These agents faced much higher rates of infection, but still followed a surprisingly similar infection curve to  the agents who looked to avoid sick neighbors. Despite higher levels of infection, these agents maintained a much larger population
+
+
+
+
+
+## Bibliograpy
+
+Downey, Allen. “Chapter 9 Agent Based Models.” *Think Complexity: Complexity Science and Computational Modeling*, O'Reilly, 2018. 
+
+Frias-Martinez, Enrique, et al. “An Agent-Based Model of Epidemic Spread Using Human 	Mobility and Social Network Information.” *2011 IEEE Third International Conference on Privacy, Security, Risk and Trust and 2011 IEEE Third International Conference on Social Computing*, 2011, https://doi.org/10.1109/passat/socialcom.2011.142. 
+
+Pan, Rong. “Rebellion on Sugarscape: Case Studies for Greed and Grievance Theory of Civil Conflicts Using Agent-Based Models.” *Social Computing, Behavioral-Cultural Modeling and Prediction*, 1 Aug. 2011, pp. 333–340., https://doi.org/10.1007/978-3-642-19656-0_46. 
+
+
 
