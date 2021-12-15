@@ -15,43 +15,55 @@ For each time step, agents move in a random order. They look at the cells within
 
 ![original model](./images/original_sugarscape.PNG )
 
-In this replication of the original model, we can see the agents, denoted by red dots, move around the grid over three time steps: zero, two, and one-hundred, going from left to right. The amount of sugar in each cell is shown based on its color, the darker orange the cell, the more sugar present. 
+In this replication of the original model, we can see the agents, denoted by red dots, move around the grid over three time steps: zero, two, and one-hundred, going from left to right. The amount of sugar in each cell is shown based on its color, the darker orange the cell, the more sugar present. We can see that over time, agents cluster around areas with the highest sugar concentration.
 
 
 
-## Experiment
+## Methodology
 
-We took the original Sugarscape model, and introduced a disease. This disease spreads between agents at a variable level of contagion, and with varying fatality. Some agents begin the simulation with this illness, and put the agents in a radius around them at risk for infection. Once infected, the length to recovery is chosen randomly. At each time step, an infected agent has a 0.01% chance of dying, and finally recovers if they make it to the length of recovery alive. Once successfully recovered, agents have a level of immunity against reinfection, making them less likely to get and spread the disease again. Agents are again represented by dots, red infected and blue uninfected. 
 
-Agents are biased to avoid other agents that are infected in the same way they are biased to move towards sugar, and we tried a range of weightings for these priorities. Shown in the following figures, we can see the behavior of agents over three time steps with different ratios of the behavior they prioritized.
+
+## Results
+
+We ran this model with different sets of priorities between finding sugar and avoiding sick neighbors. Shown in the following figures, we can see the behavior of agents over three time steps with different ratios of the behavior they prioritized.
 
 In our first simulation, agents only look at finding sugar, as in the original Sugarscape model. We see a very similar behavior, where agents cluster around areas of high sugar concentration.
 
-![original model](./images/fw10 visual.PNG )
+![original model](./images/fw10_visual.PNG )
+
+![original model](./images/10_deaths.PNG )
 
 In the second simulation, agents only care about avoiding infected neighbors. In this 
 
-![original model](./images/fw01 visual.PNG )
+![original model](./images/fw01_visual.PNG )
+
+![original model](./images/01_deaths.PNG )
 
 Next, agents weight these two needs evenly.
 
-![original model](./images/fw11 visual.PNG )
+![original model](./images/fw11_visual.PNG )
+
+![original model](./images/11_deaths.PNG )
 
 In the fourth simulation, food is given a weight of 25% and avoiding infection 75%.
 
-![original model](./images/fw13 visual.PNG )
+![original model](./images/fw13_visual.PNG )
+
+![original model](./images/13_deaths.PNG )
 
 Our final scenario weights finding sugar at 75% and avoiding infection at 25%.
 
-![original model](./images/fw31 visual.PNG )
+![original model](./images/fw31_visual.PNG )
+
+![original model](./images/31_deaths.PNG )
 
 Comparing the results for each,
 
-![original model](./images/wealth distribution alive agents.PNG )
+![original model](./images/wealth_distribution.PNG )
 
-![original model](./images/Sick agents.PNG )
+![original model](./images/Sick_agents.PNG )
 
-![original model](./images/Agents alive.PNG )
+![original model](./images/Agents_alive.PNG )
 
 The number of agents sick seems to spike at the beginning in all scenarios, and then quickly drop and level out as the time steps progress. We think this is because agents start the simulation randomly spread out across the grid, and quickly move towards an equilibrium away form each other, or at least in clusters across the space, leading to smaller outbreaks. 
 
