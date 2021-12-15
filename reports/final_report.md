@@ -32,43 +32,50 @@ We ran this model with different sets of priorities between finding sugar and av
 
 In our first simulation, agents only look at finding sugar, as in the original Sugarscape model. We see a very similar behavior, where agents cluster around areas of high sugar concentration.
 
-![original model](./images/fw10_visual.PNG )
+<!-- ![original model](./images/fw10_visual.PNG ) -->
 ![image](https://user-images.githubusercontent.com/42980963/146247763-626ce70c-d17c-453d-a0cd-cd45242621fe.png)
-
-
-![original model](./images/10_deaths.PNG )
+![image](https://user-images.githubusercontent.com/42980963/146247891-02ef80b9-75ff-49ed-a91b-d5a3b23af6a6.png)
+<!-- ![original model](./images/10_deaths.PNG ) -->
 
 In the second simulation, agents only care about avoiding infected neighbors. In this 
 
 ![original model](./images/fw01_visual.PNG )
-
-![original model](./images/01_deaths.PNG )
+![image](https://user-images.githubusercontent.com/42980963/146247935-42850fa5-b352-411d-9898-7fc13eb89960.png)
+![image](https://user-images.githubusercontent.com/42980963/146247971-0619b265-b761-44b0-9e37-21cf6f526543.png)
+<!-- ![original model](./images/01_deaths.PNG ) -->
 
 Next, agents weight these two needs evenly.
-
-![original model](./images/fw11_visual.PNG )
-
-![original model](./images/11_deaths.PNG )
+<!-- 
+![original model](./images/fw11_visual.PNG ) -->
+![image](https://user-images.githubusercontent.com/42980963/146248050-de7ad4ad-6b34-48c2-9c35-bed1569796e5.png)
+![image](https://user-images.githubusercontent.com/42980963/146248075-cf4d0f01-3811-4e4a-8e45-93ec14b91b67.png)
+<!-- ![original model](./images/11_deaths.PNG ) -->
 
 In the fourth simulation, food is given a weight of 25% and avoiding infection 75%.
 
-![original model](./images/fw13_visual.PNG )
-
-![original model](./images/13_deaths.PNG )
+<!-- ![original model](./images/fw13_visual.PNG ) -->
+![image](https://user-images.githubusercontent.com/42980963/146248140-81a4436a-b146-40e5-b927-e8bd097131cb.png)
+![image](https://user-images.githubusercontent.com/42980963/146248179-a5c56224-2c7b-4323-8ccd-06c78c54337b.png)
+<!-- ![original model](./images/13_deaths.PNG ) -->
 
 Our final scenario weights finding sugar at 75% and avoiding infection at 25%.
 
-![original model](./images/fw31_visual.PNG )
-
-![original model](./images/31_deaths.PNG )
+<!-- ![original model](./images/fw31_visual.PNG ) -->
+![image](https://user-images.githubusercontent.com/42980963/146248244-09bb2fba-68b5-43cf-bcae-9e97be7e282e.png)
+![image](https://user-images.githubusercontent.com/42980963/146248281-935416c5-acb1-4803-b72a-e2891933d924.png)
+<!-- ![original model](./images/31_deaths.PNG ) -->
 
 Comparing the results for each,
 
-![original model](./images/wealth_distribution.PNG )
+<!-- ![original model](./images/wealth_distribution.PNG ) -->
+![image](https://user-images.githubusercontent.com/42980963/146248314-2b4e1b7a-ddd9-4c6e-8e4f-5b32f785c3e5.png)
 
-![original model](./images/Sick_agents.PNG )
+<!-- ![original model](./images/Sick_agents.PNG ) -->
+![image](https://user-images.githubusercontent.com/42980963/146248349-ad7a95cc-9653-4b39-927f-341d630d3c13.png)
+<!-- 
+![original model](./images/Agents_alive.PNG ) -->
+![image](https://user-images.githubusercontent.com/42980963/146248371-a5f34df6-f3eb-457e-867e-78af15951add.png)
 
-![original model](./images/Agents_alive.PNG )
 
 The number of agents sick seems to spike at the beginning in all scenarios, and then quickly drop and level out as the time steps progress. We think this is because agents start the simulation randomly spread out across the grid, and quickly move towards an equilibrium away form each other, or at least in clusters across the space, leading to smaller outbreaks. 
 
