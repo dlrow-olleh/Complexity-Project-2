@@ -3,7 +3,7 @@
 ###### by Ally Bell and Mahima Beltur
 
 ## Abstract
-The Sugarscape model is a simplified representation of resource seeking behaviours in societies. In this project we explore how the behaviours of our agents are modified with the introduction of an epidemic disease to the population. The disease will spread to close by agents and greatly increase the probability of the agent dying, unless they receive significant "aid" by surrounding agents. The amount of aid is measured by the number of neighboring agents. We plan on modelling the contagious disease in a similar manner to the forest fire model. We will explore how different rates of contagion will influence the agents of different ranges of vision when they are programed to move away from disease, but closer to a bigger source of sugar. It will be interesting to note which desire wins out more: life or wealth?
+The Sugarscape model is a simplified representation of resource seeking behaviours in societies. In this project we explore how the behaviours of our agents are modified with the introduction of an epidemic disease to the population. The disease will spread to close by agents and greatly increase the probability of the agent dying. They are able to minimise this risk by "social distancing" from other ill agents. We modelled the effect of prioritising life over sugar collection on the overall lifespan and behaviour of the agents. We observed various clustering behaviours depending on the weighting of priorities with there being no clustering at all when agents disregarded the illness. Surprisingly agents are more likely to die by starvation than by the illness itself.
 
 ## Background
 
@@ -21,15 +21,20 @@ In this replication of the original model, we can see the agents, denoted by red
 
 ## Methodology
 
+We took the original Sugarscape model, and introduced a disease. This disease spreads between agents at a variable level of contagion, and with varying fatality. Sugarscape assigns each agent a random location, metabolism rate, and a range of vision and a lifespan that all fall into a ‘normal’ predetermined range. We first began by assigning each agent a status which can take the values 0 for ‘not sick’ or 1 for ‘sick. We initialize each agent with a status 0, and then select some random agents to be our patient 0. For this model we begin with 10 sick agents and 290 healthy ones. Each agent is affected by others in a radius around them and are at risk for infection if there are multiple sick agents in their vicinity. In a risky position, the probability of the healthy agent being infected in 0.65. Once infected, the length to recovery is chosen randomly. At each time step, an infected agent has a 0.01 chance of dying, or a 0.7 chance of recovery. If they exceed the randomly selected life expectancy for their illness, they die. Once successfully recovered, agents have a 0.01 chance to gain immunity against the disease, preventing some of them from further illness and, making them less likely to spread the disease again. Agents are again represented by dots, red for infected agents and blue for healthy ones.
+
+Agents are biased to avoid other agents that are infected in the same way they are biased to move towards sugar, and we tried a range of weightings for these priorities. Namely: 100% priority towards food, 100% priority towards distancing from illness, 75% priority towards food, 75% priority towards distancing from illness and a 50-50 split between both. To analyse each location, agents take a weighted sum of the food available in that location and subtract the number of close-by infected agents there. They choose their next location by maximising this calculation. Each agent has a varying radius of vision, and are able to make a decision based on how far they can see.
 
 
 ## Results
 
-We ran this model with different sets of priorities between finding sugar and avoiding sick neighbors. Shown in the following figures, we can see the behavior of agents over three time steps with different ratios of the behavior they prioritized.
+We ran this model with different sets of priorities between finding sugar and avoiding sick neighbors. The constant parameters in this experiment are: 0.65 rate of infection when exposed, 0.7 recovery rate for each timeste, 0.01 chance of dying from illness on each timestep. Shown in the following figures, we can see the behavior of agents over three time steps with different ratios of the behavior they prioritized.
 
 In our first simulation, agents only look at finding sugar, as in the original Sugarscape model. We see a very similar behavior, where agents cluster around areas of high sugar concentration.
 
 ![original model](./images/fw10_visual.PNG )
+![image](https://user-images.githubusercontent.com/42980963/146247763-626ce70c-d17c-453d-a0cd-cd45242621fe.png)
+
 
 ![original model](./images/10_deaths.PNG )
 
