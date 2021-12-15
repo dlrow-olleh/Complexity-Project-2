@@ -39,7 +39,7 @@ In our first simulation, agents only look at finding sugar, as in the original S
 
 In the second simulation, agents only care about avoiding infected neighbors. In this 
 
-![original model](./images/fw01_visual.PNG )
+<!-- ![original model](./images/fw01_visual.PNG ) -->
 ![image](https://user-images.githubusercontent.com/42980963/146247935-42850fa5-b352-411d-9898-7fc13eb89960.png)
 ![image](https://user-images.githubusercontent.com/42980963/146247971-0619b265-b761-44b0-9e37-21cf6f526543.png)
 <!-- ![original model](./images/01_deaths.PNG ) -->
@@ -67,19 +67,21 @@ Our final scenario weights finding sugar at 75% and avoiding infection at 25%.
 
 Comparing the results for each,
 
+<!-- ![original model](./images/Sick_agents.PNG ) -->
+![image](https://user-images.githubusercontent.com/42980963/146248349-ad7a95cc-9653-4b39-927f-341d630d3c13.png)
+<!-- ![original model](./images/Agents_alive.PNG ) -->
+![image](https://user-images.githubusercontent.com/42980963/146248371-a5f34df6-f3eb-457e-867e-78af15951add.png)
 <!-- ![original model](./images/wealth_distribution.PNG ) -->
 ![image](https://user-images.githubusercontent.com/42980963/146248314-2b4e1b7a-ddd9-4c6e-8e4f-5b32f785c3e5.png)
 
-<!-- ![original model](./images/Sick_agents.PNG ) -->
-![image](https://user-images.githubusercontent.com/42980963/146248349-ad7a95cc-9653-4b39-927f-341d630d3c13.png)
-<!-- 
-![original model](./images/Agents_alive.PNG ) -->
-![image](https://user-images.githubusercontent.com/42980963/146248371-a5f34df6-f3eb-457e-867e-78af15951add.png)
 
+The number of agents sick seems to spike at the beginning in all scenarios, and then quickly drop and level out as the time steps progress. We think this is because agents start the simulation randomly spread out across the grid, and quickly move towards an equilibrium away form each other, or at least in clusters across the space, leading to smaller outbreaks. Also, as the majority of the sick agents die out, the density of the population greatly decreases resulting in fewer agents being infected in each timestep. 
 
-The number of agents sick seems to spike at the beginning in all scenarios, and then quickly drop and level out as the time steps progress. We think this is because agents start the simulation randomly spread out across the grid, and quickly move towards an equilibrium away form each other, or at least in clusters across the space, leading to smaller outbreaks. 
+One interesting behavior seen here is in the agents who were only looking for food. These agents faced much higher rates of infection, but still followed a surprisingly similar infection curve to  the agents who looked to avoid sick neighbors. Despite higher levels of infection, these agents maintained a much larger population. Coupled with the observation that nearly all agents die due to starvation across all the models, we observe that, for the purposes of this model, it is more important for each agent to maintain their resources than health. In the first model, where the only priority is food, all agents are able to access the highest density of sugar, while in the other models  the agents cluster in areas of lowwe sugar density to avoid contact with the illness and therefore suffer as a result. 
 
-One interesting behavior seen here is in the agents who were only looking for food. These agents faced much higher rates of infection, but still followed a surprisingly similar infection curve to  the agents who looked to avoid sick neighbors. Despite higher levels of infection, these agents maintained a much larger population
+Looking at the comparison of the cdf distributions, it follows from the previous discussion that populations that care more about food than the illness have, overall, a larger amount of wealth. This follows as they are more willing to to venture into areas of high foodproduction despite the 
+
+## Future Steps
 
 
 
